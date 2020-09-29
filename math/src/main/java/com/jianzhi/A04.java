@@ -34,8 +34,10 @@ public class A04 {
         while (r <= rows - 1 && c >= 0) {
             if (target == matrix[r][c])
                 return true;
+                // 查询值大的话，向下移动，
             else if (target > matrix[r][c])
                 r++;
+                // 小的话向左移动
             else
                 c--;
         }
